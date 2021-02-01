@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    min-height: 100vh;
+    background-color: rgb(50, 18, 122);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mainDiv{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.searchText{
+    width: 0;
+    border-radius: 3rem;
+    border: none;
+    outline: none;
+    transition: all 0.2s linear;
+}
+.searchBtn{
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 4rem;
+    position: absolute;
+    right: 1.7rem;
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    background-color: darkblue;
+    color: #fff;
+}
+
+.mainDiv:hover > .searchText{
+    width: 25rem;
+    padding: 2rem;
+}
+.mainDiv:hover > .searchBtn{
+    color: darkblue;
+    background-color: #fff;
+}
